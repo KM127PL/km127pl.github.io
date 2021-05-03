@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link async rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+	<link rel="icon" type="image/png" href="./assets/img/icon.png"/>
+	<meta name="theme-color" content="#2e2e30">
+	<meta property="og:title" content="KM127PL">
+	
+    <title>KM127PL</title>
+</head>
+<body>
+    
+<script type = "text/javascript" >
+    // JavaScript program to illustrate 
+    // calculation of no. of days between two date 
+  
+    // To set two dates to two variables
+    var date1 = new Date("03/4/2020");
+var date2 = new Date();
+  
+// To calculate the time difference of two dates
+var Difference_In_Time = date2.getTime() - date1.getTime();
+  
+// To calculate the no. of days between two dates
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  
+//To display the final no. of days (result)
+document.write("<div class=\"time\">TIME IN THE QUARANTINE</div><br>"
+               + `<div class="days">${Math.round(Difference_In_Days)} DAYS</div>`);
+document.write(`<meta property=\"og:description\" content=\"${Math.round(Difference_In_Days)} Days\">`)
+  
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+.time {
+    margin-top: 20%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 32px;
+}
+.days {
+    margin-top: -2.3%;
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+</style>
+</body>
+</html>
